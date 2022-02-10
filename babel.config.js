@@ -1,4 +1,4 @@
-{
+module.exports = {
     "presets": [
         [
             "@babel/preset-env",
@@ -13,6 +13,6 @@
                 "corejs": "3.6.5"
             }
         ],
-        "@babel/preset-react"
+        ["@babel/preset-react", { runtime: "automatic" }]
     ]
 }
